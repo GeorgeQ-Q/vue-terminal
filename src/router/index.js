@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Terminal from '@/view/terminal/Terminal'
-
+import App from '@/view/App'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Terminal',
-      component: Terminal
+      component: App
     }
   ]
 })

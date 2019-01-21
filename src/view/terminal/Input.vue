@@ -1,6 +1,7 @@
+
 <template>
   <div>
-    <span v-html>
+    <span v-html id = "left">
       {{ prdfix }} <span v-html="left"></span><span v-bind:class="{ blink: isActive }" v-html="current"></span><span v-html="right"></span>
     </span>
 
@@ -90,5 +91,5 @@ export default {
   color: #000;
   /* width: 12px; */
 }
-</style>
 
+</style>

@@ -8,6 +8,7 @@
 <script>
 import { shellOutlist, shellInput } from 'views/terminal/'
 export default {
+  props: ['layer'],
   components: {
     shellOutlist,
     shellInput
@@ -26,6 +27,27 @@ export default {
     }
   },
   methods: {
+    mint(str) {
+      this.$parent.mint(str)
+    },
+    move(str) {
+      this.$parent.move(str)
+    },
+    copy(str) {
+      this.$parent.copy(str)
+    },
+    mutate(str) {
+      this.$parent.mutate(str)
+    },
+    delate(str) {
+      this.$parent.delate(str)
+    },
+    revoke(str) {
+      this.$parent.revoke(str)
+    },
+    newcs(str) {
+      return this.$parent.newcs(str)
+    }
   },
   computed: {},
   watch: {
